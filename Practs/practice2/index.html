@@ -4,27 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Tsup Bohdan CV</title>
   </head>
   <body>
     <header>
-        <img src="./img/my_pic.jpeg" alt="" width="300">
-        <div>
+        <div id="top-header">
+            <span>Цуп Богдан</span>
+            <span>Python-програміст</span>
+        </div>
+        <div id="bottom-header">
+            <img class= 'photo' src="./img/my_pic.jpeg" alt="" width="300">
+        <div id="bottom-header-text">
             <h1>Цуп Богдан</h1>
             <h2>Python-програміст</h2>
             <h3>Про мене</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iusto quod voluptates minus, ex praesentium nostrum corporis neque ad aliquam? Blanditiis, similique aperiam aliquid soluta eaque nulla sequi aut? Quaerat!</p>
         </div>
+        </div>
     </header>
-    <hr>
     <main>
+       <div id="main-left">
         <div>
-            <h2>Освіта</h2>
-            <p><b>Lorem ipsum dolor sit amet.</b></p>
+            <h2 id="study">Освіта</h2>
+            <span>Lorem ipsum dolor sit amet.</span>
+            <p>Lorem, ipsum dolor.</p>
+            <span>Lorem ipsum dolor sit amet.</span>
             <p>Lorem, ipsum dolor.</p>
         </div>
         <div>
-            <h2>Навички</h2>
+            <h2 id="skills">Навички</h2>
             <ul>
                 <li>Skill 1</li>
                 <li>Skill 2</li>
@@ -33,40 +42,46 @@
                 <li>Skill 5</li>
             </ul>
         </div>
-        <hr>
-        <div>
+       </div>
+       <div id="main-right">
+            <span id="main-right-text">Досвід роботи</span>
             <ul>
-                <li>
+                <li id="main-right-list">
                     <h4>2020</h4>
-                    <span><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, error.</b></span>
-                    <ul>
-                        <li>Lorem, ipsum dolor.</li>
-                        <li>Lorem, ipsum dolor.</li>
-                        <li>Lorem, ipsum dolor.</li>
-                    </ul>
+                    <div>
+                        <span><b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b></span>
+                        <ul>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
                 </li>
-                <li>
+                <li id="main-right-list">
                     <h4>2021</h4>
-                    <span><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, error.</b></span>
-                    <ul>
-                        <li>Lorem, ipsum dolor.</li>
-                        <li>Lorem, ipsum dolor.</li>
-                        <li>Lorem, ipsum dolor.</li>
-                    </ul>
+                    <div>
+                        <span><b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b></span>
+                        <ul>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
                 </li>
-                <li>
+                <li id="main-right-list">
                     <h4>2022</h4>
-                    <span><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, error.</b></span>
-                    <ul>
-                        <li>Lorem, ipsum dolor.</li>
-                        <li>Lorem, ipsum dolor.</li>
-                        <li>Lorem, ipsum dolor.</li>
-                    </ul>
+                    <div>
+                        <span><b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b></span>
+                        <ul>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </div>
     </main>
-    <hr>
     <footer>
         <span><b>Телефон:</b> +3801234567</span>
         <span><b>Telegram:</b> username123</span>
