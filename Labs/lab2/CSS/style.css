@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+    transform-style: preserve-3d;
+}
+
+menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background: #005478;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+menu a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.2s;
+    margin: 0;
+    padding: 0;
+}
+
+menu a:hover {
+    font-size: 25px;
+}
+
+header {
+    position: relative;
+    color: #fff;
+    box-sizing: border-box;
+    min-height: 100vh;
+    min-width: 100vw;
+    text-align: center;
+    transform-style: inherit;
+    z-index: -1;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    background-image: url(../IMG/sky-main.jpg);
+    background-color: #005478;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s linear;
+    transform-origin: center;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#top {
+    display: block;
+    background-color: #0086c0;
+    width: 100vw;
+    text-align: center;
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 20px;
+    font-size: 25px;
+    width: 100vw;
+}
+
+#content span {
+    display: block;
+    width: 70vw;
+    font-weight: 500;
+    margin: 10px;
+}
+
+#content ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#content li {
+    font-weight: 300;
+}
+
+#content-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+#content-imgs img {
+    display: block;
+    width: 10vw;
+    border: 5px #005478 solid;
+    transition: 1s;
+}
+
+#content-imgs img:hover {
+    width: 25vw;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background-color: #005478;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #4db6e3;
+}
